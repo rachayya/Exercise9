@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Exercise 9</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<h2>Execise 9 questions and answers</h2>
+		<div class="panel-group">
+			<div class="panel panel-primary">
+				<div class="panel-heading">1) Why is it important to add good
+					text to an image in an alt attribute? Are there any situations in
+					which you don't need to?</div>
+				<div class="panel-body">
+
+					<footer>From git book</footer>
+					<!-- <h1>Why is it important to add good text to an image in an alt attribute? Are there any situations in which you don't need to?</h1> -->
+
+
+					<h4 style="color: black">
+						<u>Without alt attribute</u>
+					</h4>
+
+					<figure>
+						<img src="images/dog.jpg" style="height: 100px; width: 100px">
+						<p class="text-danger">
+							This image can see and read everyone .If image is not available
+							then description is not applicable because of
+							<mark>alt</mark>
+							attribute.
+						</p>
+
+					</figure>
+					<h4 style="color: black">With alt attribute</h4>
+					<figure>
+						<p>
+							<img src="images/dog.jpg"
+								alt="A black, brown, and white dog wearing a kerchief"
+								style="height: 100px; width: 100px">
+
+						</p>
+						<p class="text-danger">
+							This image can see and read everyone .If image is not available
+							then description is there because of
+							<mark>alt</mark>
+							attribute.
+						</p>
+
+					
+					</figure>
+				</div>
+			</div>
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">2) If you have an image that is
+					1280x786 pixels large and you want to display it as a 40x30 pixel
+					thumbnail, can you do that in HTML and is it wise to do so?</div>
+				<div class="panel-body">
+					<footer>From git book</footer>
+					<h1></h1>
+
+					<h4 style="color: black">Image of 1280*786</h4>
+					<figure>
+						<img src="images/nature.jpg" style="height: 786px; width: 1100px">
+
+					</figure>
+
+					<h4 style="color: black">
+						<u>Image of 40*30</u>
+					</h4>
+					<figure>
+						<img src="images/nature.jpg" style="height: 40px; width: 30px">
+
+					</figure>
+				</div>
+			</div>
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">3) What do the valign and the align
+					attributes do and why weren’t they covered here?</div>
+				<div class="panel-body">
+					<footer>From git book</footer>
+
+					<h4 style="color: black">Without valign and align Demo</h4>
+
+					<table style="width: 50%;border: 1px solid black;">
+						<tr>
+							<th style="border: 1px solid black;">Month</th>
+							<th style="border: 1px solid black;">Savings</th>
+						</tr>
+						<tr style="height: 100px" border: 1px solid black;>
+							<td>January</td>
+							<td>$100</td>
+						</tr>
+					</table>
+
+					<h4 style="color: black">
+						<u>With valign and align Demo</u>
+					</h4>
+
+					<table style="width: 50%;border: 1px solid black;">
+						<tr>
+							<th style="border: 1px solid black;"">Month</th>
+							<th style="border: 1px solid black;"">Savings</th>
+						</tr>
+						<tr style="height: 100px;border: 1px solid black;">
+							<td valign="bottom">January</td>
+							<td valign="bottom">$100</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">4) Embed a video in your webpage
+					which starts autplaying as it loads and does not wait for the user
+					action.</div>
+				<div class="panel-body">
+					<footer>From git book</footer>
+					<!-- <h1>Why is it important to add good text to an image in an alt attribute? Are there any situations in which you don't need to?</h1> -->
+
+
+					<h4 style="color: black">
+						<u>Video</u>
+					</h4>
+
+					<div class="fullscreen-bg">
+						<video class="fullscreen-bg__video" loop="" muted=""
+							autoplay="autoplay" poster="images/logo-visa.jpg">
+							<source src="video/video.mp4" type="video/mp4"></source>
+							<source src="video/video.mp4" type="video/mp4"></source>
+
+						</video>
+						<p>This video does not wait for user action such as clicking
+							on any button or generating any event by default it play's
+							automatically.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">5) What does the longdesc attribute
+					do, and how do browsers show it?</div>
+				<div class="panel-body">
+					<footer>From git book</footer>
+					<!-- <h1>Why is it important to add good text to an image in an alt attribute? Are there any situations in which you don't need to?</h1> -->
+
+
+					<h4 style="color: black">
+						<u>Long description</u>
+					</h4>
+					<figure>
+						<img src="images/img_avatar3.png" alt="Description about image"
+							width="100" height="132" longdesc="#w3htmlExplained">
+						<pre class="text-danger">
+				It gives the description about Images which we taken from source.
+				How to get Description on first image:
+					1) Right click on first image.
+					2) List of option will open.
+					3) Click on view description option.
+					4) It show's description on same page
+										
+			</pre>
+					</figure>
+					<!-- The description is in an external page -->
+					<figure>
+						<img src="images/img_avatar3.png" alt="Description about image"
+							width="100" height="132" longdesc="text/intro.txt">
+						<pre class="text-danger">
+			How to get Description on second image:
+					1) Right click on second image.
+					2) List of option will open.
+					3) Click on view description option.
+					4) It show's description on different file
+			</pre>
+					</figure>
+					<div id="w3htmlExplained">
+						<h2>Image img_avatar3.png</h2>
+						<pre>Location: https://www.testpitara.com 
+			Width: 300px 
+			height:250px 
+			Size of File: Unknown</pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
